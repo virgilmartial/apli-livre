@@ -1,0 +1,13 @@
+@if $include-lists == true {
+   ul {
+      list-style-position: $list-style-position;
+      list-style-type: $list-style-type;
+      margin-bottom: $margin-between-paragraphs;
+   }
+
+   ol {
+      list-style-position: $list-style-position;
+      margin-bottom: $margin-between-paragraphs;
+   }
+
+}

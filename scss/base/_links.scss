@@ -1,0 +1,34 @@
+@if $include-links == true {
+
+a {
+   color: $color-2;
+   transition: $transition-timeOut ease-in-out;
+   &:hover {
+      color: $color-4;
+      transition: $transition-timeIn ease-in-out;
+   }
+   &:active {
+      color: $color-3;
+      transition: none;
+   }
+}
+
+// LINKS CON FONDO OSCURO
+@if $include-dark-bg-mode == true {
+
+.dark-bg {
+   a {
+      color: $color-txt2;
+      text-decoration: underline;
+      &:hover {
+         color: $color-5;
+      }
+      &:active {
+         color: $color-3;
+      }
+   }
+}
+
+}
+
+}

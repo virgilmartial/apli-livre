@@ -1,0 +1,115 @@
+@if $include-buttons == true {
+
+%btn {
+   display: inline-block;
+   padding: $btn-paddHeight $btn-paddWidth;
+   @media(max-width: $media-m){
+      padding: $btn-paddHeight/1.5 $btn-paddWidth/1.5;
+   }
+   font-family: principal;
+   font-size: $btn-font-size;
+   border-radius: $btn-border-radius;
+   border: $btn-border-width $btn-border-style;
+   line-height: $line-height-small;
+   transition: $transition-timeOut ease-in-out;
+   text-decoration: none;
+   white-space: nowrap;
+   margin: 10px;
+   &:hover {
+      transition: $transition-timeIn ease-in-out;
+   }
+   &:active {
+      transition: none;
+   }
+}
+
+.btn--primary,
+a.btn--primary,
+input.btn--primary {
+   @extend %btn;
+   background-color: $color-2;
+   color: $color-white;
+   border-color: $color-2;
+   &:hover {
+      background-color: $color-5;
+      border-color: $color-5;
+   }
+   &:active {
+      background-color: $color-3;
+      border-color: $color-3;
+   }
+}
+
+.btn--secondary,
+a.btn--secondary,
+input.btn--secondary {
+   @extend %btn;
+   background-color: $color-4;
+   color: $color-white;
+   border-color: $color-4;
+   &:hover {
+      background-color: $color-5;
+      border-color: $color-5;
+   }
+   &:active {
+      background-color: $color-3;
+      border-color: $color-3;
+   }
+}
+
+.btn--disabled,
+a.btn--disabled,
+input.btn--disabled {
+   @extend %btn;
+   background-color: rgba($color-5, .25);
+   color: $color-white;
+   pointer-events: none;
+}
+
+// BOTONES CON FONDO OSCURO
+@if $include-dark-mode-buttons == true {
+
+.dark-bg {
+   .btn--primary,
+   a.btn--primary,
+   input.btn--primary {
+      background-color: $color-2;
+      color: $color-white;
+      border-color: $color-2;
+      &:hover {
+         background-color: $color-5;
+         border-color: $color-5;
+      }
+      &:active {
+         background-color: $color-3;
+         border-color: $color-3;
+      }
+   }
+
+   .btn--secondary,
+   a.btn--secondary,
+   input.btn--secondary {
+      background-color: $color-4;
+      color: $color-white;
+      border-color: $color-4;
+      &:hover {
+         background-color: $color-5;
+         border-color: $color-5;
+      }
+      &:active {
+         background-color: $color-3;
+         border-color: $color-3;
+      }
+   }
+
+   .btn--disabled,
+   a.btn--disabled,
+   input.btn--disabled {
+      background-color: rgba($color-5, .25);
+      color: $color-bg2;
+   }
+}
+
+}
+
+}

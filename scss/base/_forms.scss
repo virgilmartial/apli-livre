@@ -1,0 +1,25 @@
+@if $include-forms == true {
+
+label {
+   font-size: $font-size-small;
+   line-height: $line-height-small;
+   display: block;
+}
+
+input,
+select,
+textarea {
+   border-width: $input-border-width;
+   border-style: $border-style;
+   color: $color-txt1;
+   font-family: secondary;
+   font-size: $font-size;
+   border-radius: $input-border-radius;
+   border-color: $color-grey-dark;
+   background-color: $color-white;
+   width: 100%;
+   padding: $input-paddHeight $input-paddWidth;
+   margin-bottom: 10px;
+}
+
+}

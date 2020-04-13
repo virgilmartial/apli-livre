@@ -1,0 +1,48 @@
+body{
+    padding: 50px;
+}
+
+.container{
+    background-color: rgb(221, 122, 122);
+    border-radius: 0 0 10px 10px;
+    input{
+        width: 80%;
+        border-radius: 25px;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 30%;
+        span{
+            color: rgb(218, 107, 107);
+            font-size: 40px;
+        }
+        
+    }
+}
+.alire li, .lu li{
+    padding: 5px;
+    background-color: rosybrown;
+    margin: 5px;
+    border-radius: 10px;
+    width: 40%;
+    list-style: none;
+    height: 35px;
+  
+    i{
+        float: right;
+        padding: 5px;
+        cursor: pointer;
+        &:hover{
+            transform: rotate(30deg);
+            color: rgb(25, 42, 104);
+        }
+
+    }
+}
+.oculto{
+    visibility: hidden;
+}

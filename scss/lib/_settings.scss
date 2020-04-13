@@ -1,0 +1,105 @@
+$include-styleguide: true;
+$include-reset: true;
+$include-layout: true;
+$include-utilities: true;
+$include-fonts: true;
+$include-header: true;
+$include-links: true;
+$include-buttons: true;
+$include-forms: true;
+$include-lists: true ;
+
+
+$include-dark-bg-mode: true;
+$include-dark-mode-buttons: true;
+
+
+// COLOR PALETTE
+$color-bg1: #fff;
+$color-txt1: #111;
+$color-bg2: #80367A;
+$color-txt2: #fff;
+$color-1: #80367A;
+$color-2: #C21765;
+$color-3: #CE3E7E;
+$color-4: #DA699A;
+$color-5: #E697B8;
+$color-6: #650932;
+
+// COLOR PALETTE COMPLENTARY
+$color-black: #111;
+$color-white: #fff;
+$color-grey-superdark: #232323;
+$color-grey-dark: #717171;
+$color-grey: #A5A5A5;
+$color-grey-light: #C7C7C7;
+$color-grey-superlight: #EAEAEA;
+$color-error: #DD0808;
+$color-warning: #E29C00;
+$color-success: #489848;
+$color-info: #0AB6EA;
+
+
+// SITE SETTINGS
+
+$width: 100%;
+$max-width: 1620px;
+$min-width: 320px;
+
+$font-size: 16px;
+$line-height: 1.8em;
+
+$font-size-small: .85em;
+$line-height-small: 1.3em;
+
+$margin-between-paragraphs: 1.6em;
+
+$list-style-position: inside;
+$list-style-type: circle;
+
+$h1: 44px/$font-size;
+$h2: 36px/$font-size;
+$h3: 28px/$font-size;
+$h4: 24px/$font-size;
+$h5: 20px/$font-size;
+$h6: 18px/$font-size;
+
+$border-width: 1px;
+$border-style: solid;
+$border-radius: 10px;
+
+$transition-timeIn: .3s;
+$transition-timeOut: .5s;
+
+// BUTTONS
+$btn-paddHeight: 12px;
+$btn-paddWidth: 30px;
+$btn-font-size: 19px;
+$btn-border-radius: $border-radius;
+$btn-border-width: 2px;
+$btn-border-style: solid;
+
+// MEDIA QUERIES
+$media-xl: 1690px;
+$media-l: 1390px;
+$media-m: 1024px;
+$media-s: 768px;
+$media-xs: 590px;
+$media-xxs: 490px;
+
+// FORMS
+$input-border-width: 1px;
+$input-border-radius: 2px;
+$input-paddHeight: 8px;
+$input-paddWidth: 12px;
+
+
+
+$z-index: (
+   subcero: -1,
+   sub: 20,
+   inf: 50,
+   normal: 100,
+   sup: 500,
+   sticky: 1000
+)
